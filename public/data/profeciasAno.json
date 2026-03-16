@@ -1,0 +1,222 @@
+[
+  {
+    "year": 2003,
+    "theme": "REAVIVAR A CHAMA",
+    "icon": "Flame",
+    "bg": "from-orange-50 to-amber-50",
+    "resumo": "Chamado ao despertar carismático, reacendendo o 'fogo inicial' do Batismo no Espírito (At 2).",
+    "explicacao": "Em tempos de esfriamento espiritual, profecia exorta a voltar às origens pentecostais, combatendo rotina espiritual. Biblicamente, ecoa Lv 6,12 ('o fogo sobre o altar será perpétuo'). Na RCC do Brasil, marcou o 36º ano, fortalecendo grupos de oração. Reaviva a chama do dom de Deus (II Tm 1,6).",
+    "biblia": "II Tm 1,6; Lv 6:12; At 2"
+  },
+  {
+    "year": 2004,
+    "theme": "LEVANTA-TE BRASIL. DE JOELHOS!",
+    "icon": "Church",
+    "bg": "from-red-50 to-pink-50",
+    "resumo": "Apelo à humildade e intercessão nacional, orando pela nação em crise.",
+    "explicacao": "Profecia contra corrupção e violência, invocando conversão coletiva (2Cr 7:14: 'Se o meu povo se humilhar...'). Inspirou jejuns nacionais na RCC, unindo Igreja à pátria.",
+    "biblia": "2Cr 7:14",
+    "video": true
+  },
+  {
+    "year": 2005,
+    "theme": "CELEBRANDO PENTECOSTES",
+    "icon": "Sparkles",
+    "bg": "from-yellow-50 to-amber-50",
+    "resumo": "Convite à vivência jubilosa do Pentecostes, com efusão contínua do Espírito.",
+    "explicacao": "Foco na celebração do Batismo no Espírito Santo como graça perene. Inspirou retiros nacionais e encontros de oração com línguas e louvor.",
+    "biblia": "At 2:1-4; Jo 7:38-39"
+  },
+  {
+    "year": 2006,
+    "theme": "SEDE SANTOS",
+    "icon": "Heart",
+    "bg": "from-pink-50 to-rose-50",
+    "resumo": "Chamado à santidade de vida, como resposta ao amor de Deus.",
+    "explicacao": "Ecoa 1Pd 1:15-16. Profecia contra mediocridade espiritual, incentivando formação e vida sacramental. Marcou o ano da santidade no laicato carismático.",
+    "biblia": "1Pd 1:15-16; Lv 19:2"
+  },
+  {
+    "year": 2007,
+    "theme": "APRESSAI-VOS! ASSUMI OS VOSSOS POSTOS E AMPLIAI A VOSSA VISÃO",
+    "icon": "Eye",
+    "bg": "from-teal-50 to-cyan-50",
+    "resumo": "Urgência missionária, expandindo horizontes além do local.",
+    "explicacao": "Ecoa Is 52:1 ('desperta, veste-te de força'), chamando RCC a 'Igreja em saída' (Evangelii Gaudium). Focou em evangelização urbana e formação de líderes.",
+    "biblia": "Is 52:1; Mt 28:19"
+  },
+  {
+    "year": 2008,
+    "theme": "APÓSTOLOS DA EFUSÃO DO ESPÍRITO SANTO PARA SEMEAR A CULTURA DE PENTECOSTES",
+    "icon": "FaDove",
+    "bg": "from-yellow-50 to-lime-50",
+    "resumo": "Identidade como 'apóstolos da efusão', difundindo carisma pentecostal.",
+    "explicacao": "Baseado em At 2:38, enfatiza B.E.S. como graça para laicato. Marcou seminários nacionais, plantando 'cultura de oração'.",
+    "biblia": "At 2:38; 1Cor 12:7",
+    "image": true
+  },
+  {
+    "year": 2009,
+    "theme": "JESUS É O SENHOR",
+    "icon": "Cross",
+    "bg": "from-indigo-50 to-purple-50",
+    "resumo": "Confissão central de fé, acima de ideologias.",
+    "explicacao": "Rm 10:9 ('Se confessares... serás salvo'). Profecia contra relativismo, reforçando cristocentrismo na RCC.",
+    "biblia": "Rm 10:9; Fl 2:11"
+  },
+  {
+    "year": 2010,
+    "theme": "PROCLAMA A PALAVRA, ANUNCIA A BOA NOTÍCIA",
+    "icon": "PlayCircle",
+    "bg": "from-green-50 to-emerald-50",
+    "resumo": "Ênfase na pregação evangélica.",
+    "explicacao": "2Tm 4:2 ('Proclama a palavra'). Inspirou missões de rua e mídia RCC.",
+    "biblia": "2Tm 4:2; Mc 16:15",
+    "video": true
+  },
+  {
+    "year": 2011,
+    "theme": "POR CAUSA DA TUA PALAVRA LANÇAREMOS AS REDES",
+    "icon": "Fish",
+    "bg": "from-blue-50 to-cyan-50",
+    "resumo": "Confiança na Palavra para 'pesca de almas'.",
+    "explicacao": "Lc 5:5 ('Por causa da tua palavra'). Focou em evangelização digital inicial.",
+    "biblia": "Lc 5:5; Mt 4:19"
+  },
+  {
+    "year": 2012,
+    "theme": "APASCENTA AS MINHAS OVELHAS (Jo 21, 17b)",
+    "icon": "Heart",
+    "bg": "from-rose-50 to-pink-50",
+    "resumo": "Cuidado pastoral e formação de discípulos.",
+    "explicacao": "Jo 21:17. Chamado aos líderes para alimentar espiritualmente os fiéis, com retiros e acompanhamento.",
+    "biblia": "Jo 21:15-17; 1Pd 5:2"
+  },
+  {
+    "year": 2013,
+    "theme": "ESTA É A VITÓRIA QUE VENCE O MUNDO: A NOSSA FÉ",
+    "icon": "Shield",
+    "bg": "from-amber-50 to-orange-50",
+    "resumo": "Fé como arma contra secularismo.",
+    "explicacao": "1Jo 5:4. Profecia contra crise de fé, inspirando retiros de fortalecimento.",
+    "biblia": "1Jo 5:4; Hb 11:1"
+  },
+  {
+    "year": 2014,
+    "theme": "CONSERVAR A UNIDADE DO ESPÍRITO PELO VÍNCULO DA PAZ (Ef 4,3)",
+    "icon": "Users",
+    "bg": "from-sky-50 to-blue-50",
+    "resumo": "Unidade e comunhão na diversidade carismática.",
+    "explicacao": "Ef 4:3. Combateu divisões internas, promovendo concílios e encontros nacionais.",
+    "biblia": "Ef 4:3; Jo 17:21"
+  },
+  {
+    "year": 2015,
+    "theme": "SE VIVEMOS PELO ESPÍRITO, ANDEMOS DE ACORDO COM O ESPÍRITO",
+    "icon": "Wind",
+    "bg": "from-emerald-50 to-teal-50",
+    "resumo": "Vida guiada pelo Espírito, com duas profecias de Kátia Roldi Zavaris.",
+    "explicacao": "Gl 5:25. Enfatiza imersão no B.E.S., com fundamentos em Gn 2:7, Ez 37 e Jo 20:22. Profecia 1: Mergulho na 'sobrenaturalidade'. Profecia 2: Alegria nos Grupos de Oração (Baruc 4:36-37).",
+    "biblia": "Gl 5:25; Gn 2:7; Ez 37; Jo 20:22",
+    "video": true
+  },
+  {
+    "year": 2016,
+    "theme": "SEDE MISERICORDIOSOS COMO O PAI",
+    "icon": "Heart",
+    "bg": "from-red-50 to-rose-50",
+    "resumo": "Ano da Misericórdia: viver a compaixão divina.",
+    "explicacao": "Lc 6:36. Inspirou obras de caridade, confissões e jubileus de misericórdia na RCC.",
+    "biblia": "Lc 6:36; Mt 5:7"
+  },
+  {
+    "year": 2017,
+    "theme": "O ESPÍRITO SANTO DESCERÁ SOBRE TI",
+    "icon": "FaDove",
+    "bg": "from-yellow-100 to-amber-100",
+    "resumo": "Efusão como em Maria, no Jubileu de Ouro da RCC.",
+    "explicacao": "Lc 1:35. Profecia de Patti Mansfield: 'Campos brancos para colheita' (Jo 4:35), com obediência.",
+    "biblia": "Lc 1:35; Jo 4:35"
+  },
+  {
+    "year": 2018,
+    "theme": "EIS QUE ESTOU À PORTA E BATO",
+    "icon": "DoorOpen",
+    "bg": "from-indigo-50 to-purple-50",
+    "resumo": "Convite à abertura do coração para Cristo.",
+    "explicacao": "Ap 3:20. Chamado à intimidade com Jesus, com retiros de oração pessoal.",
+    "biblia": "Ap 3:20; Mt 7:7"
+  },
+  {
+    "year": 2019,
+    "theme": "O AMOR DE DEUS FOI DERRAMADO EM NOSSOS CORAÇÕES",
+    "icon": "Heart",
+    "bg": "from-pink-50 to-rose-50",
+    "resumo": "Experiência do amor derramado pelo Espírito.",
+    "explicacao": "Rm 5:5. Foco na efusão do amor ágape, com encontros de cura interior.",
+    "biblia": "Rm 5:5; 1Jo 4:16"
+  },
+  {
+    "year": 2020,
+    "theme": "TRANSFORMAI-VOS PELA RENOVAÇÃO DA VOSSA MENTE",
+    "icon": "RefreshCw",
+    "bg": "from-cyan-50 to-teal-50",
+    "resumo": "Renovação interior em meio à pandemia.",
+    "explicacao": "Rm 12:2. Profecia de esperança, incentivando lives, oração online e resiliência.",
+    "biblia": "Rm 12:2; 2Cor 5:17"
+  },
+  {
+    "year": 2021,
+    "theme": "DESCERÁ SOBRE VÓS O ESPÍRITO SANTO",
+    "icon": "Zap",
+    "bg": "from-lime-50 to-green-50",
+    "resumo": "Nova efusão para tempos de crise.",
+    "explicacao": "At 1:8. Chamado à coragem missionária pós-pandemia.",
+    "biblia": "At 1:8; Is 61:1"
+  },
+  {
+    "year": 2022,
+    "theme": "ÀQUELE QUE SE ASSENTA NO TRONO E AO CORDEIRO",
+    "icon": "Crown",
+    "bg": "from-amber-50 to-yellow-50",
+    "resumo": "Adoração ao Cordeiro no centro da RCC.",
+    "explicacao": "Ap 5:12. Foco na adoração carismática e louvor.",
+    "biblia": "Ap 5:12; Sl 95:6"
+  },
+  {
+    "year": 2023,
+    "theme": "DESPERTA, TU QUE DORMES!",
+    "icon": "Sun",
+    "bg": "from-orange-50 to-red-50",
+    "resumo": "Despertar espiritual contra apatia.",
+    "explicacao": "Ef 5:14. Combateu sonolência espiritual com retiros e missões.",
+    "biblia": "Ef 5:14; Rm 13:11"
+  },
+  {
+    "year": 2024,
+    "theme": "A PAZ ESTEJA CONVOSCO",
+    "icon": "FaDove",
+    "bg": "from-blue-50 to-indigo-50",
+    "resumo": "Shalom de Cristo em tempos de ansiedade.",
+    "explicacao": "Jo 20:21. Profecia de paz interior e reconciliação.",
+    "biblia": "Jo 20:21; Cl 3:15"
+  },
+  {
+    "year": 2025,
+    "theme": "PELA VIRTUDE DO ESPÍRITO SANTO",
+    "icon": "Star",
+    "bg": "from-teal-50 to-cyan-50",
+    "resumo": "Vida virtuosa pelo poder do Espírito.",
+    "explicacao": "Foco nas virtudes teologais e cardeais, com formação ética.",
+    "biblia": "Gl 5:22-23; 2Pd 1:5-7"
+  },
+  {
+    "year": 2026,
+    "theme": "“EM NENHUM OUTRO HÁ SALVAÇÃO”",
+    "icon": "Cross",
+    "bg": "from-purple-50 to-violet-50",
+    "resumo": "Exclusividade salvífica de Cristo.",
+    "explicacao": "At 4:12. Profecia de conversão radical, com apelo à Terra Santa.",
+    "biblia": "At 4:12; Jo 14:6"
+  }
+]

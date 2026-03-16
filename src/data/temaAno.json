@@ -1,0 +1,218 @@
+[
+  {
+    "year": 2003,
+    "theme": "REAVIVAR A CHAMA",
+    "icon": "Flame",
+    "bg": "from-orange-50 to-amber-50",
+    "resumo": "Chamado a reacender o fervor do Batismo no Espírito; convocação à renovação pessoal e comunitária.",
+    "explicacao": "A palavra 'Reavivar a Chama' convida a Igreja a retornar à paixão inicial do Pentecostes: vida de oração, avivamento interior e renovação do compromisso missionário. Historicamente marcou um período em que a RCC enfatizou a necessidade de vigilância espiritual, renovo de grupos de oração e arrependimento comunitário para que o dom do Espírito aja sem barreiras.",
+    "biblia": "At 2; Lv 6,12; II Tm 1,6"
+  },
+  {
+    "year": 2004,
+    "theme": "LEVANTA-TE BRASIL. DE JOELHOS!",
+    "icon": "Church",
+    "bg": "from-red-50 to-pink-50",
+    "resumo": "Apelo à humildade, jejum e intercessão nacional para reconciliação e transformação social.",
+    "explicacao": "Esse tema é uma convocação à oração nacional e à conversão coletiva: 'Levanta-te Brasil. De joelhos!' expressa a ideia de que mudanças sociais e morais só começam pelo coração renovado do povo de Deus. A ênfase foi na intercessão, jejuns e movimentos de reconciliação com responsabilidade social.",
+    "biblia": "2Cr 7,14"
+  },
+  {
+    "year": 2005,
+    "theme": "CELEBRANDO PENTECOSTES",
+    "icon": "Sparkles",
+    "bg": "from-yellow-50 to-amber-50",
+    "resumo": "Chamado à celebração contínua do dom do Espírito; recuperar a alegria do Pentecostes.",
+    "explicacao": "O tema recorda que Pentecostes não é um evento isolado do passado, mas uma realidade atual: viver na presença do Espírito, com louvor, dons e renovação carismática. Incentivou encontros de louvor, seminários e formação para maior abertura às manifestações do Espírito.",
+    "biblia": "At 2,1-4; Jo 7,38-39"
+  },
+  {
+    "year": 2006,
+    "theme": "SEDE SANTOS",
+    "icon": "Heart",
+    "bg": "from-pink-50 to-rose-50",
+    "resumo": "Convocação à santidade de vida pessoal e comunitária como resposta ao amor de Deus.",
+    "explicacao": "O chamado à santidade enfatizou coerência entre fé e prática: vida sacramental, formação espiritual e abandono de atitudes contrárias ao evangelho. A mensagem incentivou práticas de penitência, formação catequética e testemunho cristão autêntico.",
+    "biblia": "1Pd 1,15-16; Lv 19,2"
+  },
+  {
+    "year": 2007,
+    "theme": "APRESSAI-VOS! ASSUMI OS VOSSOS POSTOS E AMPLIAI A VOSSA VISÃO",
+    "icon": "Eye",
+    "bg": "from-teal-50 to-cyan-50",
+    "resumo": "Urgência missionária: assumir responsabilidades na missão e ampliar visão evangelizadora.",
+    "explicacao": "O tema pediu aos membros da RCC que se posicionassem ativamente na missão: formar líderes, abrir novas frentes de evangelização e ter visão mais ampla para projetos pastorais e sociais. Foi um movimento de capacitação e envio missionário.",
+    "biblia": "Is 52,1; Mt 28,19"
+  },
+  {
+    "year": 2008,
+    "theme": "APÓSTOLOS DA EFUSÃO DO ESPÍRITO SANTO PARA SEMEAR A CULTURA DE PENTECOSTES",
+    "icon": "FaDove",
+    "bg": "from-yellow-50 to-lime-50",
+    "resumo": "Identidade missionária: ser mensageiros do derramamento do Espírito e difundir cultura pentecostal.",
+    "explicacao": "O tema ressaltou o papel do laicato carismático como 'apóstolos da efusão', chamados a levar a experiência do Batismo no Espírito às comunidades, renovando a prática de oração, evangelização e formação de discípulos.",
+    "biblia": "At 2,38; 1Cor 12,7"
+  },
+  {
+    "year": 2009,
+    "theme": "JESUS É O SENHOR",
+    "icon": "Cross",
+    "bg": "from-indigo-50 to-purple-50",
+    "resumo": "Confissão cristológica central: reafirmar a soberania de Cristo sobre a vida e ação da Igreja.",
+    "explicacao": "Tema que recorda a centralidade de Cristo: proclamar Jesus como Senhor em meio a crises culturais e ideológicas. Encorajou pregações, cultos e testemunhos que reafirmassem a primazia de Jesus como fundamento da fé e missão.",
+    "biblia": "Rm 10,9; Fl 2,11"
+  },
+  {
+    "year": 2010,
+    "theme": "PROCLAMA A PALAVRA, ANUNCIA A BOA NOTÍCIA",
+    "icon": "PlayCircle",
+    "bg": "from-green-50 to-emerald-50",
+    "resumo": "Ênfase na proclamação do Evangelho: formação em pregação e ações de evangelização.",
+    "explicacao": "O tema incentivou uma maior atenção à pregação da Palavra em todo o país: missões de rua, uso da mídia, formações e capacitações para anunciadores, reafirmando que a palavra proclamada gera conversão e frutos na sociedade.",
+    "biblia": "2Tm 4,2; Mc 16,15"
+  },
+  {
+    "year": 2011,
+    "theme": "POR CAUSA DA TUA PALAVRA LANÇAREMOS AS REDES",
+    "icon": "Fish",
+    "bg": "from-blue-50 to-cyan-50",
+    "resumo": "Confiança na Palavra para lançar iniciativas de evangelização e missão.",
+    "explicacao": "Inspirado pela confiança de Simão Pedro na Palavra de Jesus, o tema ativou iniciativas missionárias e pastorais que dependem da fidelidade à Palavra: evangelização em ambientes diversos, mobilização de voluntários e estratégias para alcançar novos públicos.",
+    "biblia": "Lc 5,5; Mt 4,19"
+  },
+  {
+    "year": 2012,
+    "theme": "APASCENTA AS MINHAS OVELHAS (Jo 21,17b)",
+    "icon": "Heart",
+    "bg": "from-rose-50 to-pink-50",
+    "resumo": "Cuidado pastoral e formação de discípulos; prioridade ao acompanhamento espiritual.",
+    "explicacao": "O tema enfatizou a responsabilidade pastoral dos líderes: formação, acompanhamento e cuidado dos fiéis, com ênfase em retiros, grupos de discipulado e suporte comunitário para promover maturidade espiritual.",
+    "biblia": "Jo 21,15-17; 1Pd 5,2"
+  },
+  {
+    "year": 2013,
+    "theme": "ESTA É A VITÓRIA QUE VENCE O MUNDO: A NOSSA FÉ",
+    "icon": "Shield",
+    "bg": "from-amber-50 to-orange-50",
+    "resumo": "A fé como força transformadora para enfrentar desafios culturais e espirituais.",
+    "explicacao": "O tema reforça que a fé, vivida e praticada, é instrumento de transformação social e espiritual. Promoveu retiros de fortalecimento, cursos de formação e ações que lembram que a fé é a vitória que supera o medo e o pessimismo.",
+    "biblia": "1Jo 5,4; Hb 11,1"
+  },
+  {
+    "year": 2014,
+    "theme": "CONSERVAR A UNIDADE DO ESPÍRITO PELO VÍNCULO DA PAZ (Ef 4,3)",
+    "icon": "Users",
+    "bg": "from-sky-50 to-blue-50",
+    "resumo": "Valorizar a unidade e a paz, preservando comunhão entre as instâncias do movimento.",
+    "explicacao": "Enfatizou a necessidade de dialogo, reconciliação e unidade entre lideranças e grupos, prevenindo divisões internas e promovendo iniciativas que reúnam diferentes realidades em torno da missão comum.",
+    "biblia": "Ef 4,3; Jo 17,21"
+  },
+  {
+    "year": 2015,
+    "theme": "SE VIVEMOS PELO ESPÍRITO, ANDEMOS DE ACORDO COM O ESPÍRITO",
+    "icon": "Wind",
+    "bg": "from-emerald-50 to-teal-50",
+    "resumo": "Chamada para viver segundo a ação do Espírito Santo: testemunho e santidade prática.",
+    "explicacao": "O tema incentivou que a vida pessoal, comunitária e a ação pastoral sejam guiadas pelo Espírito Santo, promovendo discernimento, práticas de oração e iniciativas sobrenaturais orientadas pela fé, além de formação e obediência à inspiração divina.",
+    "biblia": "Gl 5,25; Jo 20,22"
+  },
+  {
+    "year": 2016,
+    "theme": "SEDE MISERICORDIOSOS COMO VOSSO PAI É MISERICORDIOSO",
+    "icon": "Heart",
+    "bg": "from-red-50 to-rose-50",
+    "resumo": "Ano da misericórdia: viver compaixão, perdão e serviço aos mais vulneráveis.",
+    "explicacao": "Alinhado ao Jubileu da Misericórdia e à pedagogia do papa, o tema enfatizou ações concretas de caridade, perdão e acompanhamento dos que sofrem, promovendo ministérios de assistência e reconciliação.",
+    "biblia": "Lc 6,36; Mt 5,7"
+  },
+  {
+    "year": 2017,
+    "theme": "O ESPÍRITO SANTO DESCERÁ SOBRE TI",
+    "icon": "FaDove",
+    "bg": "from-yellow-100 to-amber-100",
+    "resumo": "Profético: expectativa de efusão do Espírito com nova vitalidade missionária.",
+    "explicacao": "Expressa a promessa de renovação espiritual: cheiro de Pentecostes e colheita espiritual. Inspirou entusiasmo missionário, envio de missionários, celebrações e chamadas à obediência ao Espírito.",
+    "biblia": "Lc 1,35; Jo 4,35"
+  },
+  {
+    "year": 2018,
+    "theme": "EIS QUE ESTOU À PORTA E BATO",
+    "icon": "DoorOpen",
+    "bg": "from-indigo-50 to-purple-50",
+    "resumo": "Convite à abertura do coração para acolher a presença de Cristo e responder ao chamado.",
+    "explicacao": "O tema lembra a oração pessoal e a disponibilidade à voz de Cristo: converter o coração, atender ao chamado e criar portas para evangelização e diálogo fraterno em todas as esferas sociais.",
+    "biblia": "Ap 3,20; Mt 7,7"
+  },
+  {
+    "year": 2019,
+    "theme": "O AMOR DE DEUS FOI DERRAMADO EM NOSSOS CORAÇÕES",
+    "icon": "Heart",
+    "bg": "from-pink-50 to-rose-50",
+    "resumo": "Chamada à experiência do amor ágape do Espírito como força de cura e comunhão.",
+    "explicacao": "Foco na experiência do amor divino derramado pelo Espírito: cura interior, restauração relacional e testemunho caridoso. Incentivou ações de escuta, aconselhamento e ministérios de cura.",
+    "biblia": "Rm 5,5; 1Jo 4,16"
+  },
+  {
+    "year": 2020,
+    "theme": "TRANSFORMAI-VOS PELA RENOVAÇÃO DA VOSSA MENTE",
+    "icon": "RefreshCw",
+    "bg": "from-cyan-50 to-teal-50",
+    "resumo": "Renovação interior diante dos desafios (pandemia): conversão, resiliência e esperança.",
+    "explicacao": "Em contexto de pandemia, o tema convocou a transformação pessoal e comunitária: renovar a mente segundo a Palavra de Deus, repensar práticas pastorais (igreja digital) e sustentar a esperança cristã diante de crises.",
+    "biblia": "Rm 12,2; 2Cor 5,17"
+  },
+  {
+    "year": 2021,
+    "theme": "DESCERÁ SOBRE VÓS O ESPÍRITO SANTO E VOS DARÁ FORÇA E SEREIS MINHAS TESTEMUNHAS",
+    "icon": "Zap",
+    "bg": "from-lime-50 to-green-50",
+    "resumo": "Nova efusão para tempos de reconstrução pós-crise; impulso missionário renovado.",
+    "explicacao": "O tema renovou a expectativa por uma nova ação do Espírito para transformar corações e projetar iniciativas de retomada da missão: formação, mobilização e envio, com foco em reiniciar as atividades pastorais com força renovada.",
+    "biblia": "At 1,8; Is 61,1"
+  },
+  {
+    "year": 2022,
+    "theme": "ÀQUELE QUE SE ASSENTA NO TRONO E AO CORDEIRO, LOUVOR, HONRA, GLÓRIA E PODER",
+    "icon": "Crown",
+    "bg": "from-amber-50 to-yellow-50",
+    "resumo": "Centralidade da adoração ao Cordeiro como fundamento da vida carismática e do louvor.",
+    "explicacao": "Tema que coloca a adoração como eixo do movimento: reconhecer a soberania do Cordeiro e viver uma espiritualidade de louvor que anima a missão, a comunhão e a fidelidade pastoral.",
+    "biblia": "Ap 5,12; Sl 95,6"
+  },
+  {
+    "year": 2023,
+    "theme": "DESPERTA, TU QUE DORMES! LEVANTA-TE ENTRE OS MORTOS E CRISTO TE ILUMINARÁ",
+    "icon": "Sun",
+    "bg": "from-orange-50 to-red-50",
+    "resumo": "Chamada ao despertar espiritual contra a apatia; reavivamento e compromisso missionário.",
+    "explicacao": "Uma convocação ao despertar moral e espiritual: recuperar o ardor inicial, combater a acomodação e assumir renovada responsabilidade missionária e discipuladora em todas as instâncias do movimento.",
+    "biblia": "Ef 5,14; Rm 13,11"
+  },
+  {
+    "year": 2024,
+    "theme": "A PAZ ESTEJA CONVOSCO! COMO O PAI ME ENVIOU, ASSIM TAMBÉM EU VOS ENVIO A VÓS.",
+    "icon": "FaDove",
+    "bg": "from-blue-50 to-indigo-50",
+    "resumo": "Palavra de reconciliação e paz interior: cura das divisões e serenidade em tempos agitados.",
+    "explicacao": "O tema convida à construção de paz pessoal e comunitária: processos de reconciliação, diálogo ecumênico e ações que promovam harmonia nas comunidades e na sociedade, enquanto se confia na paz de Cristo.",
+    "biblia": "Jo 20,21; Cl 3,15"
+  },
+  {
+    "year": 2025,
+    "theme": "PELA VIRTUDE DO ESPÍRITO SANTO TRANSBORDEIS DE ESPERANÇA",
+    "icon": "Star",
+    "bg": "from-teal-50 to-cyan-50",
+    "resumo": "Chamada a viver as virtudes sobrenaturais e morais guiadas pelo Espírito para testemunho eficaz.",
+    "explicacao": "O tema estimula a cultivo das virtudes teologais e cardeais sob a ação do Espírito: fé, esperança, caridade, prudência e fortaleza, voltadas para a formação de comunidades maduras, éticas e missionárias.",
+    "biblia": "Gl 5,22-23; 2Pd 1,5-7"
+  },
+  {
+    "year": 2026,
+    "theme": "“EM NENHUM OUTRO HÁ SALVAÇÃO”",
+    "icon": "Cross",
+    "bg": "from-purple-50 to-violet-50",
+    "resumo": "Afirmação da centralidade salvífica de Cristo e apelo à evangelização corajosa.",
+    "explicacao": "Reforça a proclamação da exclusividade da salvação em Cristo como motivação para evangelização, oração e testemunho público, incentivando iniciativas missionárias de conversão e anúncio do Evangelho.",
+    "biblia": "At 4,12; Jo 14,6"
+  }
+]

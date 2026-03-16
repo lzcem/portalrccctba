@@ -1,0 +1,60 @@
+🟡 VIDEO: C:\projetojsd\portalrccctba\public\videos\1754113591426-367961533.mp4
+STDOUT: 
+STDERR: 'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+ERROR: Command failed: chown www-data:www-data "C:\projetojsd\portalrccctba\public\videos\1754113591426-367961533.mp4" && chmod 755 "C:\projetojsd\portalrccctba\public\videos\1754113591426-367961533.mp4"
+'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+
+🟢 THUMB: C:\projetojsd\portalrccctba\public\videos\1754113591425-770314953.png
+STDOUT: 
+STDERR: 'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+ERROR: Command failed: chown www-data:www-data "C:\projetojsd\portalrccctba\public\videos\1754113591425-770314953.png" && chmod 755 "C:\projetojsd\portalrccctba\public\videos\1754113591425-770314953.png"
+'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+
+🟡 VIDEO: C:\projetojsd\portalrccctba\public\videos\1754690418981-483738754.mp4
+STDOUT: 
+STDERR: 'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+ERROR: Command failed: chown www-data:www-data "C:\projetojsd\portalrccctba\public\videos\1754690418981-483738754.mp4" && chmod 755 "C:\projetojsd\portalrccctba\public\videos\1754690418981-483738754.mp4"
+'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+
+🟢 THUMB: C:\projetojsd\portalrccctba\public\videos\1754690418977-322032173.jpg
+STDOUT: 
+STDERR: 'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+ERROR: Command failed: chown www-data:www-data "C:\projetojsd\portalrccctba\public\videos\1754690418977-322032173.jpg" && chmod 755 "C:\projetojsd\portalrccctba\public\videos\1754690418977-322032173.jpg"
+'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+
+🟢 THUMB: C:\projetojsd\portalrccctba\public\videos\1754694522632-811413038.png
+STDOUT: 
+STDERR: 'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+ERROR: Command failed: chown www-data:www-data "C:\projetojsd\portalrccctba\public\videos\1754694522632-811413038.png" && chmod 755 "C:\projetojsd\portalrccctba\public\videos\1754694522632-811413038.png"
+'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+
+🟡 VIDEO: C:\projetojsd\portalrccctba\public\videos\1754694522633-916961476.mp4
+STDOUT: 
+STDERR: 'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+ERROR: Command failed: chown www-data:www-data "C:\projetojsd\portalrccctba\public\videos\1754694522633-916961476.mp4" && chmod 755 "C:\projetojsd\portalrccctba\public\videos\1754694522633-916961476.mp4"
+'chown' n�o � reconhecido como um comando interno
+ou externo, um programa oper�vel ou um arquivo em lotes.
+
+

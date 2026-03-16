@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --gradient-start: #15803d;
+  /* green-700 */
+  --gradient-end: #4ade80;
+  /* green-400 */
+  --bg-gradient-start: #14532d;
+  /* green-900 */
+  --bg-gradient-end: #4ade80;
+  /* green-400 */
+  --header-bg: #14532d;
+  /* green-900 */
+}
+
+
+.header {
+  background-color: #14532d;
+}
+.btn-primary {
+  background: linear-gradient(to right, #15803d, #4ade80);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: opacity 0.3s;
+}
+.group:hover .group-hover\:block {
+  display: block;
+}
+.group .dropdown {
+  transition-delay: 0.1s;
+}
+
+main {
+  padding-top: 5rem; /* 80px para o header */
+}
+
+.ql-editor {
+  color: #000000 !important;
+}
+
+.carta-fundo {
+  background: linear-gradient(to bottom, #f5f5f5, #e8e8e8);
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carta-fundo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M10 10h80v80H10z" fill="none" stroke="#d4af37" stroke-width="0.5" opacity="0.1"/></svg>') repeat;
+  opacity: 0.2;
+}
+
+.carta-fundo::after {
+  content: '✍';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #8b5a2b;
+  opacity: 0.3;
+}
+
+.espiritualidade-fundo {
+  background: linear-gradient(to bottom, #1f2937, #312e81);
+  border: 2px solid #818cf8;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.espiritualidade-fundo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50 20a30 30 0 0 0-30 30 30 30 0 0 0 30 30 30 30 0 0 0 30-30 30 30 0 0 0-30-30z" fill="none" stroke="#818cf8" stroke-width="0.5" opacity="0.2"/></svg>') repeat;
+  opacity: 0.3;
+}
+
+.espiritualidade-fundo::after {
+  content: '🕯️';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #818cf8;
+  opacity: 0.3;
+  animation: flicker 3s infinite ease-in-out;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+
+.louvor-fundo {
+  background: linear-gradient(to bottom, #fef3c7, #fed7aa);
+  border: 2px solid #f59e0b;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.louvor-fundo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50 20a30 30 0 0 0-30 30 30 30 0 0 0 30 30 30 30 0 0 0 30-30 30 30 0 0 0-30-30z" fill="none" stroke="#f59e0b" stroke-width="0.5" opacity="0.2"/></svg>') repeat;
+  opacity: 0.3;
+}
+
+.louvor-fundo::after {
+  content: '🎶';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 28px;
+  color: #b45309;
+  opacity: 0.3;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.5; }
+}
+
+.oracao-fundo {
+  width: 100%;
+  max-width: 500px; /* largura máxima em desktops */
+  margin: 0 auto;
+  padding: 1rem 1rem 1rem;
+  background: linear-gradient(145deg, #f0f4ff, #dbeafe);
+  border: 2px solid #c7d2fe;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.oracao-fundo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50 20a30 30 0 0 0-30 30 30 30 0 0 0 30 30 30 30 0 0 0 30-30 30 30 0 0 0-30-30z" fill="none" stroke="%23c7d2fe" stroke-width="0.5" opacity="0.15"/></svg>') repeat;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.oracao-fundo::after {
+  content: '🕊';
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-size: 36px;
+  color: #93c5fd;
+  opacity: 0.25;
+  animation: float 4s infinite ease-in-out;
+  z-index: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); opacity: 0.25; }
+  50% { transform: translateY(-8px); opacity: 0.4; }
+}
+
+.oracao-fundo > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sessao-pedidos {
+  width: 100%;
+  max-width: 1200px; /* largura máxima em desktops */
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 500px; /* altura um pouco maior para não cortar o conteúdo */
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 768px) {
+  .oracao-fundo {
+    max-width: 100%; /* ocupa toda a largura no mobile */
+    border-radius: 0.75rem;
+  }
+}
+
