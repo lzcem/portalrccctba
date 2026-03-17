@@ -44,23 +44,32 @@ try {
 function shouldUpload(itemPath) {
   const normalized = itemPath.replace(/\\/g, '/').toLowerCase();
 
-  if (normalized.includes('/public/videos')) {
-    console.log(`⏭️ Ignorando public/videos: ${itemPath}`);
-    return false;
-  }
+  // Lista de padrões e pastas para ignorar
+  const blackList = [
+    '/public/videos',
+    '/videos/',
+    '/public/radio',
+    '/radio/',
+    '/public/audiospaodiario', // Pasta de áudios do Pão Diário
+    '/public/imgmensagens',
+    '/public/imgcoordenadores',
+    '/public/imgfotos',
+    '/public/imgnoticias',
+    '/public/imgpublicacao',
+    '/public/imgespiritualidade',
+    '/public/imggrupos',
+    '/public/imgamigos',
+    '/public/imgamorcc',
+    '/node_modules',
+    '/.git',
+    '.env'
+  ];
 
-  if (normalized.includes('/videos/')) {
-    console.log(`⏭️ Ignorando pasta videos: ${itemPath}`);
-    return false;
-  }
+  // Verifica se o caminho atual contém algum item da lista negra
+  const isExcluded = blackList.some(excluded => normalized.includes(excluded.toLowerCase()));
 
-    if (normalized.includes('/public/radio')) {
-    console.log(`⏭️ Ignorando public/radio: ${itemPath}`);
-    return false;
-  }
-
-  if (normalized.includes('/radio/')) {
-    console.log(`⏭️ Ignorando pasta radio: ${itemPath}`);
+  if (isExcluded) {
+    console.log(`⏭️ Ignorando item protegido: ${itemPath}`);
     return false;
   }
 
