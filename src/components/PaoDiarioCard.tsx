@@ -46,7 +46,7 @@ const PaoDiarioCard: React.FC = () => {
 
   const compartilharWhatsApp = () => {
     if (!pao) return;
-    const msg = `*🔥 Pão Diário - RCC Curitiba*%0A%0A"${pao.texto_biblico}"%0A*(${pao.referencia})*%0A%0A*Reflexão:* ${pao.reflexao}%0A%0A*Propósito:* ${pao.proposito}%0A%0A_Acesse o portal para ouvir e ler:_ rcccuritiba.com.br`;
+    const msg = `*🔥 Pão Diário - RCC Curitiba*%0A%0A"${pao.texto_biblico}"%0A*(${pao.referencia})*%0A%0A*Reflexão:* ${pao.reflexao}%0A%0A*Propósito:* ${pao.proposito}%0A%0A_Acesse o portal para ouvir e ler:_ www.rcccuritiba.com.br`;
     window.open(`https://api.whatsapp.com/send?text=${msg}`, '_blank');
   };
 

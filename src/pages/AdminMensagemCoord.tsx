@@ -205,7 +205,7 @@ export default function AdminMensagemCoord() {
         <div className="min-h-screen bg-gradient-to-br from-blue-900 to-green-600 text-white font-sans p-6 flex justify-center">
             <div className="w-full max-w-4xl">
                 <h1 className="text-4xl font-semibold mb-8 tracking-wide text-white drop-shadow-lg">
-                    {id ? 'Editar Mensagem' : 'Criar Mensagem'}
+                    {id ? 'Editar Mensagem da Coordenação' : 'Criar Mensagem da Coordenação'}
                 </h1>
 
                 {message?.visible && (

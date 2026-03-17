@@ -35,6 +35,7 @@ import CenaculoDiario from '../components/CenaculoDiario';
 import TercoEspiritoSanto from '../components/TercoEspiritoSanto';
 import NewsletterPaoDiario from '../components/NewsletterPaoDiario';
 import PaoDiarioCard from '../components/PaoDiarioCard';
+import FacebookFeed from '../components/FacebookFeed';
 
 
 // Ícone bíblico do Font Awesome 6
@@ -965,7 +966,7 @@ const Home = () => {
 
 
             </section>
-            
+
 
             {/* Carrossel de publicações (continua abaixo...) */}
 
@@ -1039,39 +1040,39 @@ const Home = () => {
               </div>
             )}
 
-           {/* ############################################################ */}
-  {/* NOVA SEÇÃO: PÃO DIÁRIO E CENÁCULO LADO A LADO */}
-  {/* ############################################################ */}
-  <section className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-    {/* Coluna do Pão Diário */}
-    <div className="flex flex-col">
-      <div className="text-center mb-4">
-        <h2 className="inline-flex items-center gap-3 text-xl sm:text-2xl font-bold text-green-100 uppercase tracking-tighter">
-          <FaFire className="text-orange-500 animate-pulse text-2xl" />
-          Pão Diário
-        </h2>
-        <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent mt-2" />
-      </div>
-      <div className="flex-grow">
-        <PaoDiarioCard />
-      </div>
-    </div>
+            {/* ############################################################ */}
+            {/* NOVA SEÇÃO: PÃO DIÁRIO E CENÁCULO LADO A LADO */}
+            {/* ############################################################ */}
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+              {/* Coluna do Pão Diário */}
+              <div className="flex flex-col">
+                <div className="text-center mb-4">
+                  <h2 className="inline-flex items-center gap-3 text-xl sm:text-2xl font-bold text-green-100 uppercase tracking-tighter">
+                    <FaFire className="text-orange-500 animate-pulse text-2xl" />
+                    Pão Diário
+                  </h2>
+                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent mt-2" />
+                </div>
+                <div className="flex-grow">
+                  <PaoDiarioCard />
+                </div>
+              </div>
 
-    {/* Coluna do Cenáculo Diário */}
-    <div className="flex flex-col">
-      <div className="text-center mb-4">
-        <h2 className="inline-flex items-center gap-3 text-xl sm:text-2xl font-bold text-green-100 uppercase tracking-tighter">
-          <FaFire className="text-orange-500 animate-pulse text-2xl" />
-          Cenáculo Diário
-        </h2>
-        <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent mt-2" />
-      </div>
-      <div className="flex-grow">
-        <CenaculoDiario />
-      </div>
-    </div>
-  </section>
-  {/* ############################################################ */}
+              {/* Coluna do Cenáculo Diário */}
+              <div className="flex flex-col">
+                <div className="text-center mb-4">
+                  <h2 className="inline-flex items-center gap-3 text-xl sm:text-2xl font-bold text-green-100 uppercase tracking-tighter">
+                    <FaFire className="text-orange-500 animate-pulse text-2xl" />
+                    Cenáculo Diário
+                  </h2>
+                  <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent mt-2" />
+                </div>
+                <div className="flex-grow">
+                  <CenaculoDiario />
+                </div>
+              </div>
+            </section>
+            {/* ############################################################ */}
             <br></br>
             <div className="text-center mb-8">
               <h2 className="inline-flex items-center gap-4 text-2xl sm:text-3xl font-bold text-green-100 mb-4">
@@ -1186,29 +1187,34 @@ const Home = () => {
             </section>
             <br></br>
 
-            <aside className=" lg:col-span-3 lg:block sticky top-6 h-fit space-y-6">
-              {/* Widget de Eventos e Formações do Mês */}
-              <div className="bg-gradient-to-br from-blue-900/40 to-indigo-900/40 rounded-2xl p-6 border border-blue-700/30 shadow-xl">
-                <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-3 border-b border-white/10 pb-2">
-                  <FaCalendarAlt className="text-white-400" /> Próximos Eventos
+            <aside className="w-full block lg:hidden space-y-6 lg:col-span-3">
+              {/*} <aside className="lg:col-span-3  lg:block sticky top-6 h-fit space-y-6"> {*/}
+
+              {/* Widget de Eventos - Versão Smartphone Otimizada */}
+              <div className="bg-white rounded-[2.5rem] p-5 border border-slate-100 shadow-lg relative overflow-hidden">
+                {/* Detalhe estético lateral (melhor para scroll vertical no mobile) */}
+                <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-orange-500 to-amber-500" />
+
+                <h3 className="text-sm font-black text-slate-800 mb-6 flex items-center gap-3 uppercase tracking-wider ml-2">
+                  <div className="p-2.5 bg-orange-50 rounded-2xl">
+                    <FaCalendarAlt className="text-orange-600 text-lg" />
+                  </div>
+                  Próximos Eventos
                 </h3>
 
                 <div className="space-y-4">
                   {(() => {
-
-                    //console.log(publicacoes);
-                    // FILTRO: Status deve ser "publicada" AND (Categoria Evento OU Formação)
                     const eventosPublicados = publicacoes.filter(pub =>
-                      pub.status === 'publicada' &&
-                      (pub.categoria === 'Evento')
-
+                      pub.status === 'publicada' && (pub.categoria === 'Evento')
                     );
 
                     if (eventosPublicados.length === 0) {
                       return (
-                        <p className="text-xs text-gray-400 italic text-center py-4">
-                          Nenhum retiro ou formação agendado para este mês.
-                        </p>
+                        <div className="bg-slate-50 rounded-[2rem] p-8 text-center border border-dashed border-slate-200 mx-2">
+                          <p className="text-xs text-slate-400 font-bold italic">
+                            Nenhum evento agendado para esta semana.
+                          </p>
+                        </div>
                       );
                     }
 
@@ -1216,20 +1222,24 @@ const Home = () => {
                       <Link
                         key={evento.id}
                         to={`/publicacoes/${evento.id}`}
-                        className="group block bg-white/5 hover:bg-white/10 p-3 rounded-xl transition-all border border-transparent hover:border-blue-500/30"
+                        className="block bg-slate-50 active:bg-orange-50 active:scale-[0.98] p-5 rounded-[2rem] transition-all border border-transparent border-l-0 ml-2"
                       >
                         <div className="flex flex-col">
-                          <span className={`text-[10px] font-bold uppercase tracking-wider mb-1 ${evento.categoria === 'Formação' ? 'text-purple-400' : 'text-yellow-400'
-                            }`}>
-                            {evento.categoria}
-                          </span>
-                          <h4 className="text-sm font-semibold text-gray-100 group-hover:text-blue-300 transition-colors line-clamp-2">
+                          <div className="flex justify-between items-center mb-3">
+                            <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full ${evento.categoria === 'Formação'
+                                ? 'bg-purple-100 text-purple-600'
+                                : 'bg-orange-100 text-orange-700'
+                              }`}>
+                              {evento.categoria}
+                            </span>
+                            <span className="text-[10px] font-bold text-orange-500 uppercase tracking-tighter">
+                              Ver agora →
+                            </span>
+                          </div>
+
+                          <h4 className="text-[15px] font-extrabold text-slate-800 line-clamp-2 leading-tight">
                             {evento.titulo}
                           </h4>
-                          <div className="flex items-center gap-2 mt-2 text-xs text-gray-400">
-                            <FaEye className="text-[10px]" />
-                            <span>Ver detalhes</span>
-                          </div>
                         </div>
                       </Link>
                     ));
@@ -1238,9 +1248,10 @@ const Home = () => {
 
                 <Link
                   to="/agenda"
-                  className="block w-full mt-4 text-center text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors py-2 border border-blue-500/20 rounded-lg hover:bg-blue-500/10"
+                  className="flex items-center justify-center gap-3 w-full mt-8 text-[12px] font-black text-white py-4 bg-slate-900 rounded-[1.5rem] uppercase tracking-[0.2em] shadow-md active:scale-95 transition-all"
                 >
-                  Ver Agenda Completa
+                  <FaCalendarAlt size={14} />
+                  Agenda Completa
                 </Link>
               </div>
             </aside>
@@ -2212,22 +2223,30 @@ const Home = () => {
             {/* Agenda Próxima */}
             {/* Widget de Eventos e Formações - Ajustado para acompanhar a nova largura */}
             <aside className="hidden lg:block sticky top-6 h-fit space-y-6">
-              <div className="bg-gradient-to-br from-blue-900/40 to-indigo-900/40 rounded-2xl p-5 border border-blue-700/30 shadow-xl">
-                <h3 className="text-md font-bold text-white mb-4 flex items-center gap-3 border-b border-white/10 pb-2">
-                  <FaPlayCircle className="text-blue-400" /> Próximos Eventos
+              <div className="bg-white rounded-[2rem] p-6 border border-slate-100 shadow-sm relative overflow-hidden">
+                {/* Detalhe sutil de cor no topo */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-indigo-400" />
+
+                <h3 className="text-sm font-black text-slate-800 mb-6 flex items-center gap-3 uppercase tracking-wider">
+                  <div className="p-2 bg-blue-50 rounded-lg">
+                    <FaPlayCircle className="text-blue-500 text-lg" />
+                  </div>
+                  Próximos Eventos
                 </h3>
 
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {(() => {
                     const eventosPublicados = publicacoes.filter(pub =>
-                      pub.status === 'publicada' && (pub.categoria === 'Evento')
+                      pub.status === 'publicada' && pub.categoria === 'Evento'
                     );
 
                     if (eventosPublicados.length === 0) {
                       return (
-                        <p className="text-[10px] text-gray-400 italic text-center py-4">
-                          Nenhum retiro ou formação agendado para este mês.
-                        </p>
+                        <div className="bg-slate-50 rounded-2xl p-6 text-center border border-dashed border-slate-200">
+                          <p className="text-[11px] text-slate-400 font-medium italic">
+                            Nenhum retiro ou formação agendado para este mês.
+                          </p>
+                        </div>
                       );
                     }
 
@@ -2235,18 +2254,22 @@ const Home = () => {
                       <Link
                         key={evento.id}
                         to={`/publicacoes/${evento.id}`}
-                        className="group block bg-white/5 hover:bg-white/10 p-3 rounded-xl transition-all border border-transparent hover:border-blue-500/30"
+                        className="group block bg-slate-50 hover:bg-white p-4 rounded-2xl transition-all border border-transparent hover:border-blue-100 hover:shadow-md hover:-translate-y-1"
                       >
                         <div className="flex flex-col">
-                          <span className={`text-[9px] font-bold uppercase tracking-wider mb-1 ${evento.categoria === 'Formação' ? 'text-purple-400' : 'text-yellow-400'}`}>
-                            {evento.categoria}
-                          </span>
-                          <h4 className="text-xs font-semibold text-gray-100 group-hover:text-blue-300 transition-colors line-clamp-2 leading-tight">
+                          <div className="flex justify-between items-start mb-2">
+                            <span className="text-[9px] font-black uppercase tracking-[0.15em] px-2 py-1 bg-blue-100 text-blue-600 rounded-md">
+                              {evento.categoria}
+                            </span>
+                            <FaEye className="text-slate-300 group-hover:text-blue-400 transition-colors text-[10px]" />
+                          </div>
+
+                          <h4 className="text-[13px] font-bold text-slate-700 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
                             {evento.titulo}
                           </h4>
-                          <div className="flex items-center gap-2 mt-2 text-[10px] text-gray-400">
-                            <FaEye className="text-[9px]" />
-                            <span>Ver detalhes</span>
+
+                          <div className="mt-3 flex items-center text-[10px] font-bold text-blue-500 opacity-0 group-hover:opacity-100 transition-all translate-x-[-10px] group-hover:translate-x-0 uppercase tracking-tighter">
+                            Ver detalhes <span className="ml-1">→</span>
                           </div>
                         </div>
                       </Link>
@@ -2256,7 +2279,7 @@ const Home = () => {
 
                 <Link
                   to="/agenda"
-                  className="block w-full mt-4 text-center text-[10px] font-semibold text-blue-400 hover:text-blue-300 transition-colors py-2 border border-blue-500/20 rounded-lg hover:bg-blue-500/10 uppercase tracking-widest"
+                  className="group flex items-center justify-center gap-2 w-full mt-6 text-[11px] font-black text-slate-500 hover:text-white transition-all py-3.5 bg-slate-100 hover:bg-blue-600 rounded-xl uppercase tracking-[0.2em]"
                 >
                   Ver Agenda Completa
                 </Link>
@@ -2367,6 +2390,33 @@ const Home = () => {
               </div>
             </div>
             <br></br><br></br>
+
+            <div className="text-center mb-8">
+              <h2 className="inline-flex items-center gap-4 text-2xl sm:text-2xl font-bold text-green-100 mb-4">
+                FACEBOOK RCC CURITIBA
+              </h2>
+              {/* Linha divisória com largura total */}
+              <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-green-200 to-transparent mb-6" />
+            </div>
+
+            <section className="max-w-8xl mx-auto px-1 py-1">
+              {/* O gap-12 dá um respiro de 3rem entre as colunas */}
+              <div className="grid grid-cols-1 lg:grid-cols-1 items-start">
+
+                {/* Coluna da Esquerda (Notícias) */}
+                <div className="lg:col-span-7 xl:col-span-8 overflow-hidden">
+                  {/* Conteúdo das notícias */}
+                </div>
+
+                {/* Coluna da Direita (Facebook) */}
+                <aside className="lg:col-span-5 xl:col-span-4 w-full overflow-hidden">
+                  <div className="w-full flex flex-col">
+                    <FacebookFeed />
+                  </div>
+                </aside>
+
+              </div>
+            </section>
           </aside>
 
           {/* Popup de agradecimento após comentário */}

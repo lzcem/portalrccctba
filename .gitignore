@@ -1,6 +1,10 @@
 node_modules
-dist
 public/videos
 public/radio
 .env
 *.log
+
+# Outros
+.DS_Store
+dist/
+build/

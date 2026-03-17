@@ -91,8 +91,8 @@ const AdminDashboard: React.FC = () => {
       itens: [
         { title: 'Pão Diário', icon: <FaBible />, link: '/admin/pao-diario', color: 'bg-purple-600' }, // NOVA OPÇÃO
         { title: 'Cenáculo', icon: <FaPray />, link: '/admin/cenaculo', color: 'bg-amber-500' },
-        { title: 'Formação', icon: <FaGraduationCap />, link: '/admin/formacoes/nova', color: 'bg-emerald-600' },
-        { title: 'Mensagem', icon: <FaBullhorn />, link: '/admin/mensagens-coordenacao', color: 'bg-teal-600' },
+        { title: 'Formação Mensal', icon: <FaGraduationCap />, link: '/admin/formacoes/nova', color: 'bg-emerald-600' },
+        { title: 'Mensagem da Coord.', icon: <FaBullhorn />, link: '/admin/mensagens-coordenacao', color: 'bg-teal-600' },
          { title: 'Rádio', icon: <FaMicrophone />, link: '/admin/radio', color: 'bg-pink-600' },
       ]
     },
