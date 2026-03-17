@@ -1,7 +1,9 @@
-node_modules
-public/videos
-public/radio
+node_modules/
 .env
+public/AudiosPaoDiario/
+public/videos/
+public/radio/
+public/Img*
 *.log
 
 # Outros
