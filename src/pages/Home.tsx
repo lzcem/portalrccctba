@@ -1099,6 +1099,7 @@ const Home = () => {
 
               <ErrorBoundary>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
+
                   {noticias.length > 0 ? (
                     <>
                       {/* Notícia Principal (Destaque) */}
@@ -1131,6 +1132,7 @@ const Home = () => {
                       </motion.div>
 
                       {/* Notícias Secundárias (Cards Menores) */}
+
                       {noticias.slice(1, 4).map((noticia) => (
                         <motion.div
                           key={noticia.id}
@@ -1188,11 +1190,9 @@ const Home = () => {
             <br></br>
 
             <aside className="w-full block lg:hidden space-y-6 lg:col-span-3">
-              {/*} <aside className="lg:col-span-3  lg:block sticky top-6 h-fit space-y-6"> {*/}
-
               {/* Widget de Eventos - Versão Smartphone Otimizada */}
               <div className="bg-white rounded-[2.5rem] p-5 border border-slate-100 shadow-lg relative overflow-hidden">
-                {/* Detalhe estético lateral (melhor para scroll vertical no mobile) */}
+                {/* Detalhe estético lateral */}
                 <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-orange-500 to-amber-500" />
 
                 <h3 className="text-sm font-black text-slate-800 mb-6 flex items-center gap-3 uppercase tracking-wider ml-2">
@@ -1204,41 +1204,68 @@ const Home = () => {
 
                 <div className="space-y-4">
                   {(() => {
-                    const eventosPublicados = publicacoes.filter(pub =>
-                      pub.status === 'publicada' && (pub.categoria === 'Evento')
-                    );
+                    // 1. Normalizamos as notícias para o formato que o link e o card esperam
+                    console.log("EventosNotícia:---->" + noticias)
 
-                    if (eventosPublicados.length === 0) {
+                    const noticiasComoEventos = noticias
+                      .filter(n => n.categoria?.toLowerCase() === 'Evento')
+                      .map(n => ({
+                        id: n.id,
+                        titulo: n.manchete,
+                        categoria: 'Evento', // Forçamos o rótulo para consistência visual
+                        data_referencia: n.data_inicio, // Usamos para ordenação
+                        tipo: 'noticia' // Flag para controle se necessário
+                      }));
+
+                    // 2. Filtramos as publicações da outra array
+                    const eventosAgenda = publicacoes
+                      .filter(pub => pub.status === 'publicada' &&
+                        (pub.categoria === 'Evento' || pub.categoria === 'Formação')
+                      )
+                      .map(p => ({
+                        id: p.id,
+                        titulo: p.titulo,
+                        categoria: p.categoria,
+                        data_referencia: p.data_publicacao,
+                        tipo: 'publicacao'
+                      }));
+
+                    // 3. Unimos as duas listas e ordenamos pela data mais recente
+                    const listaFinal = [...noticiasComoEventos, ...eventosAgenda]
+                      .sort((a, b) => new Date(b.data_referencia).getTime() - new Date(a.data_referencia).getTime());
+
+                    if (listaFinal.length === 0) {
                       return (
                         <div className="bg-slate-50 rounded-[2rem] p-8 text-center border border-dashed border-slate-200 mx-2">
                           <p className="text-xs text-slate-400 font-bold italic">
-                            Nenhum evento agendado para esta semana.
+                            Nenhuma atividade ou evento agendado.
                           </p>
                         </div>
                       );
                     }
 
-                    return eventosPublicados.slice(0, 3).map(evento => (
+                    // Exibe os 4 mais relevantes (Notícias + Agenda)
+                    return listaFinal.slice(0, 4).map(item => (
                       <Link
-                        key={evento.id}
-                        to={`/publicacoes/${evento.id}`}
+                        key={`${item.tipo}-${item.id}`} // Key única combinando tipo e ID
+                        to={item.tipo === 'noticia' ? `/noticias/${item.id}` : `/publicacoes/${item.id}`}
                         className="block bg-slate-50 active:bg-orange-50 active:scale-[0.98] p-5 rounded-[2rem] transition-all border border-transparent border-l-0 ml-2"
                       >
                         <div className="flex flex-col">
                           <div className="flex justify-between items-center mb-3">
-                            <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full ${evento.categoria === 'Formação'
-                                ? 'bg-purple-100 text-purple-600'
-                                : 'bg-orange-100 text-orange-700'
+                            <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full ${item.categoria === 'Formação'
+                              ? 'bg-purple-100 text-purple-600'
+                              : 'bg-orange-100 text-orange-700'
                               }`}>
-                              {evento.categoria}
+                              {item.categoria}
                             </span>
                             <span className="text-[10px] font-bold text-orange-500 uppercase tracking-tighter">
-                              Ver agora →
+                              {item.tipo === 'noticia' ? 'Ler Notícia →' : 'Ver agora →'}
                             </span>
                           </div>
 
                           <h4 className="text-[15px] font-extrabold text-slate-800 line-clamp-2 leading-tight">
-                            {evento.titulo}
+                            {item.titulo}
                           </h4>
                         </div>
                       </Link>
@@ -2391,32 +2418,23 @@ const Home = () => {
             </div>
             <br></br><br></br>
 
-            <div className="text-center mb-8">
-              <h2 className="inline-flex items-center gap-4 text-2xl sm:text-2xl font-bold text-green-100 mb-4">
-                FACEBOOK RCC CURITIBA
-              </h2>
-              {/* Linha divisória com largura total */}
-              <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-green-200 to-transparent mb-6" />
-            </div>
 
-            <section className="max-w-8xl mx-auto px-1 py-1">
-              {/* O gap-12 dá um respiro de 3rem entre as colunas */}
-              <div className="grid grid-cols-1 lg:grid-cols-1 items-start">
-
-                {/* Coluna da Esquerda (Notícias) */}
-                <div className="lg:col-span-7 xl:col-span-8 overflow-hidden">
-                  {/* Conteúdo das notícias */}
-                </div>
-
-                {/* Coluna da Direita (Facebook) */}
-                <aside className="lg:col-span-5 xl:col-span-4 w-full overflow-hidden">
-                  <div className="w-full flex flex-col">
-                    <FacebookFeed />
-                  </div>
-                </aside>
-
+            {/* Container com 'contain: paint' obriga o navegador a isolar o que acontece aqui dentro */}
+            <div className="w-full mt-12 mb-20" style={{ contain: 'paint' }}>
+              <div className="text-center mb-8">
+                <h2 className="inline-flex items-center gap-4 text-2xl font-bold text-green-100 mb-4 uppercase tracking-widest">
+                  Facebook RCC Curitiba
+                </h2>
+                <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-green-200 to-transparent" />
               </div>
-            </section>
+
+              {/* Container lateral para garantir espaço */}
+              <aside className="lg:col-span-4 w-full"> {/* Aumente para col-span-4 se estiver usando 12 colunas */}
+                <div className="w-full flex justify-center">
+                  <FacebookFeed />
+                </div>
+              </aside>
+            </div>
           </aside>
 
           {/* Popup de agradecimento após comentário */}
